@@ -21,6 +21,9 @@
   border-radius: 15px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border-top: 7px solid #28FFBF;
+  border-bottom: 7px solid #28FFBF;
+  border-left: 2px solid #28FFBF;
 }
 
 .sidebar-header {
@@ -34,11 +37,14 @@
   top: -20px;
   display: flex;
   justify-content: center;
+
+
 }
 
 .sidebar-img__img {
   border-radius: 25%;
   width: 50%;
+  border-top: 5px solid #BCFFB9;
 
 }
 
@@ -403,6 +409,9 @@
   border-radius: 15px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border-top: 3px outset #50CB93;
+  border-bottom: 3px outset #50CB93;
+
 }
 
 .info-container {

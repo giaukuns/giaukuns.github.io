@@ -6,9 +6,11 @@
   --second-text: #545454;
   --blue-text: #03868a;
 }
+
 * {
   box-sizing: inherit;
 }
+
 html,
 body {
   margin: 0;
@@ -21,10 +23,12 @@ body {
 a {
   text-decoration: none;
 }
+
 ul {
   padding: 0 0 0 10px;
   margin: 0;
 }
+
 li {
   list-style: none;
 }
