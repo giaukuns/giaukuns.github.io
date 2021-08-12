@@ -38,7 +38,8 @@
 
 .sidebar-img__img {
   border-radius: 25%;
-  width: 60%;
+  width: 50%;
+
 }
 
 .sidebar-name__name {
@@ -88,6 +89,7 @@
 
 .main-icon>i {
   color: var(--primary-text);
+
 }
 
 .main-yourself__info>p {
