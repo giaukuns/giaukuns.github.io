@@ -21,9 +21,9 @@
   border-radius: 15px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  border-top: 7px solid #28FFBF;
+  /* border-top: 7px solid #28FFBF;
   border-bottom: 7px solid #28FFBF;
-  border-left: 2px solid #28FFBF;
+  border-left: 2px solid #28FFBF; */
 }
 
 .sidebar-header {
@@ -136,7 +136,11 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 29px;
-  color: var(--primary-text);
+  color: #38ada9 !important
+}
+
+.main-yourself__skills>p:hover {
+  color: #fa983a !important;
 }
 
 /* ul > li skilss */
@@ -379,7 +383,11 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 29px;
-  color: var(--primary-text);
+  color: #38ada9 !important
+}
+
+.main-yourself__hobbies>p:hover {
+  color: #fa983a !important;
 }
 
 .main-yourself>span {
@@ -409,8 +417,8 @@
   border-radius: 15px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  border-top: 3px outset #50CB93;
-  border-bottom: 3px outset #50CB93;
+  /* border-top: 3px outset #50CB93;
+  border-bottom: 3px outset #50CB93; */
 
 }
 
@@ -452,8 +460,13 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 29px;
-  color: var(--primary-text);
+  color: #38ada9 !important
 }
+
+.main-info__objective>p:hover {
+  color: #fa983a !important;
+}
+
 
 .main-objective__info {
   padding: 0 0 0 10px;
@@ -497,7 +510,11 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 29px;
-  color: var(--primary-text);
+  color: #38ada9 !important
+}
+
+.main-info__education>p:hover {
+  color: #fa983a !important;
 }
 
 .main-education__info {
@@ -550,7 +567,11 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 29px;
-  color: var(--primary-text);
+  color: #38ada9 !important
+}
+
+.main-info__workexp>p:hover {
+  color: #fa983a !important;
 }
 
 .main-workexp__info {
@@ -610,7 +631,11 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 29px;
-  color: var(--primary-text);
+  color: #38ada9 !important
+}
+
+.main-info__project>p:hover {
+  color: #fa983a !important;
 }
 
 .main-project__info {
@@ -737,5 +762,162 @@
 @media only screen and (max-width: 480px) {
   .res {
     background-color: pink;
+  }
+}
+
+.img-zoomable:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #38ada9 !important;
+}
+
+
+
+/**
+The end
+*/
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
 }
